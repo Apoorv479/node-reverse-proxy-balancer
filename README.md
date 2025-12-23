@@ -58,7 +58,7 @@ This project requires two terminal instances to simulate a distributed environme
 **Step 1: Start the Backend Cluster**
 This script spins up 3 dummy HTTP servers on ports 3001, 3002, and 3003.
 
-````bash
+```bash
 node backends.js
 
 **Step 2: Start the Proxy Server This runs the main load balancer on port 8080.**
@@ -77,4 +77,4 @@ Caching: Notice that after the first load, subsequent refreshes (within 20 secon
 Rate Limiting: Rapidly refresh the page (more than 5 times in 10 seconds) to trigger the "Too Many Requests" blocking mechanism.
 
 Health Check: Stop the backends.js script or kill a specific port process. The proxy logs will show the server being removed from the rotation without crashing the application.
-````
+
