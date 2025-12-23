@@ -61,7 +61,7 @@ This script spins up 3 dummy HTTP servers on ports 3001, 3002, and 3003.
 ````bash
 node backends.js
 
-**Step 2: Start the Proxy Server This runs the main load balancer on port 8080.
+**Step 2: Start the Proxy Server This runs the main load balancer on port 8080.**
 ```bash
 node secure_proxy.js
 
